@@ -29,11 +29,11 @@ from winotify import Notification
 # ============================================================
 
 # --- ข้อมูลฟอร์ม (step 1) ---
-FIRST_NAME = "KARN"
-LAST_NAME = "KARAKET"
-PHONE = "0933430263"
-CONTACT_EMAIL = "jj.karnkaraket@gmail.com"
-SEASON_VALUE = "Summer"  # ค่าจริงใน <option value="..."> ของ #seasonSelect (ไม่ใช่ label ที่มี emoji)
+FIRST_NAME = "NAME"
+LAST_NAME = "LAST_NAME"
+PHONE = "Your_Phone_Number"
+CONTACT_EMAIL = "Your_Email"
+SEASON_VALUE = "SEASON"  # ค่าจริงใน <option value="..."> ของ #seasonSelect (ไม่ใช่ label ที่มี emoji)
 
 # --- URL ของฟอร์ม (ตรวจสอบตัวอักษรให้แม่นยำ พิมพ์ผิดง่ายมาก เช่น l กับ I) ---
 FORM_URL = "https://script.google.com/macros/s/AKfycbwUZIwNELDWZAKHtMkmpmx89ILMaBB8ah99ZIegMYAXFuReXyN-gbgq7wG_OIiae0Zj/exec"
