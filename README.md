@@ -86,15 +86,25 @@ screenshots/         screenshots saved automatically when a matching job is foun
    pip install -r requirements.txt
    playwright install chromium
    ```
-3. Install the free **ntfy** app on your phone (Android/iOS), or open [ntfy.sh](https://ntfy.sh) in a mobile browser, and subscribe to the topic name set in `main.py` (`NTFY_TOPIC`).
+3. Install the free **ntfy** app on your phone (Android/iOS), or open [ntfy.sh](https://ntfy.sh) in a mobile browser.
+4. Pick your own private topic name (any random word/phrase works, e.g. `my-wat-alerts-x7q2`) and subscribe to it in the app — you'll set this same name in `main.py` in the next step.
 
-## 7. Configuration
+## 7. Configuration — fill in your own info before running
 
-All settings are at the top of [main.py](main.py) — no command-line flags needed, just edit and save:
+This repo ships with placeholder values, no personal data. Before running, open [main.py](main.py) and replace these placeholders with your own info:
+
+| Placeholder in `main.py` | Replace with |
+|---|---|
+| `FIRST_NAME = "YOUR_FIRST_NAME"` | Your first name |
+| `LAST_NAME = "YOUR_LAST_NAME"` | Your last name |
+| `PHONE = "YOUR_PHONE_NUMBER"` | Your phone number |
+| `CONTACT_EMAIL = "YOUR_EMAIL@example.com"` | Your email address |
+| `NTFY_TOPIC = "YOUR_UNIQUE_NTFY_TOPIC"` | The private topic name you subscribed to in step 4 above |
+
+All other settings are also at the top of `main.py` and safe to leave as-is, or tweak:
 
 | Setting | Meaning |
 |---|---|
-| `FIRST_NAME`, `LAST_NAME`, `PHONE`, `CONTACT_EMAIL` | Your info, auto-filled into the form |
 | `SEASON_VALUE` | Which season to search under (e.g. `"Summer"`) |
 | `SEARCH_TERM` | What to type into the job search box (e.g. `"Thai"`) |
 | `MATCH_KEYWORDS` | List of words — a job title matches if it contains any of these (case-insensitive) |
@@ -103,7 +113,8 @@ All settings are at the top of [main.py](main.py) — no command-line flags need
 | `MAX_RUNTIME_HOURS` | Safety limit — script stops automatically after this long |
 | `HEARTBEAT_INTERVAL_SECONDS` | How often to send a "still running" ping |
 | `ERROR_ALERT_THRESHOLD` | How many failed checks in a row before you get an error alert |
-| `NTFY_TOPIC` | Your private ntfy topic name (keep it random/hard to guess — anyone who knows the topic name can read your notifications) |
+
+> ⚠️ Keep your `NTFY_TOPIC` private and hard to guess — anyone who knows the exact topic name can read your notifications. Never commit your real filled-in `main.py` (with your real name/phone/email/topic) back to a public repo — keep those values local only.
 
 ## 8. Running it
 
