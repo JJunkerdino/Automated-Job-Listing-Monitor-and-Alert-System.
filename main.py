@@ -28,12 +28,12 @@ from winotify import Notification
 # CONFIG — แก้ค่าตรงนี้ได้ตามต้องการ
 # ============================================================
 
-# --- ข้อมูลฟอร์ม (step 1) ---
-FIRST_NAME = "NAME"
-LAST_NAME = "LAST_NAME"
-PHONE = "Your_Phone_Number"
-CONTACT_EMAIL = "Your_Email"
-SEASON_VALUE = "SEASON"  # ค่าจริงใน <option value="..."> ของ #seasonSelect (ไม่ใช่ label ที่มี emoji)
+# --- ข้อมูลฟอร์ม (step 1) --- แก้เป็นข้อมูลของคุณเองก่อนรัน ---
+FIRST_NAME = "YOUR_FIRST_NAME"
+LAST_NAME = "YOUR_LAST_NAME"
+PHONE = "YOUR_PHONE_NUMBER"
+CONTACT_EMAIL = "YOUR_EMAIL@example.com"
+SEASON_VALUE = "Summer"  # ค่าจริงใน <option value="..."> ของ #seasonSelect (ไม่ใช่ label ที่มี emoji)
 
 # --- URL ของฟอร์ม (ตรวจสอบตัวอักษรให้แม่นยำ พิมพ์ผิดง่ายมาก เช่น l กับ I) ---
 FORM_URL = "https://script.google.com/macros/s/AKfycbwUZIwNELDWZAKHtMkmpmx89ILMaBB8ah99ZIegMYAXFuReXyN-gbgq7wG_OIiae0Zj/exec"
@@ -65,7 +65,7 @@ LOG_FILE = "log.txt"
 # HTTP POST ธรรมดา ไม่ต้องสมัคร/ไม่มี API key เลย ลงแอพ ntfy บนมือถือ แล้ว subscribe
 # topic ชื่อเดียวกันกับด้านล่าง จะเห็น push notification ทันทีที่สคริปต์ส่ง
 NTFY_ENABLED = True
-NTFY_TOPIC = "wat-job-karn-4e980b0ba6ef"  # เปลี่ยนเป็นชื่ออื่นได้ (ยิ่งสุ่ม/ยาวยิ่งปลอดภัย เพราะ topic เดาโดยสุ่มจะเห็นข้อความได้)
+NTFY_TOPIC = "YOUR_UNIQUE_NTFY_TOPIC"  # ตั้งชื่อเฉพาะของคุณเอง (ยิ่งสุ่ม/ยาวยิ่งปลอดภัย เพราะใครก็ตามที่รู้ชื่อ topic จะเห็นข้อความได้)
 
 # ============================================================
 # LOGGING — print + เขียนไฟล์ log.txt พร้อม timestamp ในตัว
