@@ -1,12 +1,15 @@
 # WAT Job Search Monitor
 
-A small Python bot that watches the **New Step Exchange Program** job board for you, and pings your phone the moment a job you want shows up — so you don't have to sit there refreshing the page all day.
+A small Python bot that watches the **Work and Travel Exchange Program** job board for you, and pings your phone the moment a job you want shows up — so you don't have to sit there refreshing the page all day.
 
 ---
 
 ## 1. How this idea started
 
-The New Step Exchange Program (WAT job board) posts new host-employer jobs at random times, and popular jobs (like Thai restaurants) get filled within minutes of appearing. Checking the site by hand every few minutes all day is not realistic — you'd miss the job before you even open the tab.
+อยากทำเพราะกำลังมีแพลนว่าจะไปเวิคช่วงปี 2027 แต่งานที่อยากจะไปทำดันอยู่ที่ Alaska ซึ่งมีคนไปจำนวนมาก พอถึงวันที่ได้เลือกก็คือเต็มทุกที่ แต่ก็ยังเหลือบางงานที่ยังไม่เอามาลงเว็บ แต่การที่ต้องเช็คเว็บตลอดว่างานลงหรือยัง มันทำให้เสียเวลาเกินไปและไม่ม่อะไรการะนตีว่าจะทันคนอื่น 
+เลยสร้างตัวช่าวยนี่ขึ้นมาเพื่อให้ Search อัตโนมัติและส่งแจ้งเตือนเมื่อเจอ แต่ต้องกดสมัครอะไรเองเพื่อไม่ให้ผิดพลาด
+
+The Work and Travel Exchange Program (WAT job board) posts new host-employer jobs at random times, and popular jobs (like Thai restaurants) get filled within minutes of appearing. Checking the site by hand every few minutes all day is not realistic — you'd miss the job before you even open the tab.
 
 So the idea was: let a script do the watching instead of a human. It should:
 - Open the site and search for the job automatically, every couple of minutes.
